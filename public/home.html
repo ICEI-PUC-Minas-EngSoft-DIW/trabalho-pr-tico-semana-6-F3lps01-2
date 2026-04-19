@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookZone</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <h1>BookZone</h1>
+
+        <nav class="nav">
+            <a href="#">Home</a>
+            <a href="#livros">Livros</a>
+            <a href="#cadastro">Cadastrar</a>
+            <a href="#pesquisa">Pesquisar</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="banner">
+            <h2>Destaque da Semana!</h2>
+        </section>
+
+        <section class="intro">
+            <p>
+            O BookZone é um espaço dedicado aos amantes da leitura.
+            Aqui você encontra livros, autores e pode cadastrar novas obras
+            para compartilhar conhecimento com outros leitores.
+            </p>
+        </section>
+
+
+        <!-- PESQUISA E ORDENAÇÃO -->
+
+        <section id="pesquisa" class="pesquisa">
+
+            <h2>Pesquisar e Ordenar Livros</h2>
+
+            <input type="text" placeholder="Digite o nome do livro...">
+
+            <select>
+                <option>Ordenar por</option>
+                <option>Título</option>
+                <option>Autor</option>
+                <option>Mais recentes</option>
+            </select>
+
+        </section>
+
+
+        <!-- LISTA DE LIVROS -->
+
+        <h2 class="titulo-livros">Nossos Livros</h2>
+
+        <section id="livros" class="books">
+
+            <article class="card">
+
+                <img src="apedrafilosofal.png" alt="Harry Potter e a Pedra Filosofal">
+
+                <h3>Pedra Filosofal</h3>
+
+                <p>
+                    O início da jornada de Harry Potter em Hogwarts...
+                </p>
+
+                <p><strong>Autor:</strong> J.K. Rowling</p>
+
+            </article>
+
+            <article class="card">
+
+                <img src="camarasecreta.png" alt="Harry Potter e a Câmara Secreta">
+
+                <h3>Câmara Secreta</h3>
+
+                <p>
+                    Mistérios começam a surgir em Hogwarts...
+                </p>
+
+                <p><strong>Autor:</strong> J.K. Rowling</p>
+
+            </article>
+
+            <article class="card">
+
+                <img src="prisioneiroazkaban.png" alt="Harry Potter e o Prisioneiro de Azkaban">
+
+                <h3>Prisioneiro de Azkaban</h3>
+
+                <p>
+                    Harry retorna a Hogwarts e descobre segredos sobre seu passado.
+                </p>
+
+                <p><strong>Autor:</strong> J.K. Rowling</p>
+
+            </article>
+
+            <article class="card">
+
+                <img src="domcasmurro.png" alt="Dom Casmurro">
+
+                <h3>Dom Casmurro</h3>
+
+                <p>
+                    A história de Bentinho e Capitu, marcada por ciúmes e mistérios.
+                </p>
+
+                <p><strong>Autor:</strong> Machado de Assis</p>
+
+            </article>
+
+            <article class="card">
+
+                <img src="memoriaspostumas.png" alt="Memórias Póstumas de Brás Cubas">
+
+                <h3>Memórias Póstumas de Brás Cubas</h3>
+
+                <p>
+                    A vida e as reflexões de Brás Cubas, narradas após sua morte.
+                </p>
+
+                <p><strong>Autor:</strong> Machado de Assis</p>
+
+            </article>
+
+            <article class="card">
+
+                <img src="quincasborba.png" alt="Quincas Borba">
+
+                <h3>Quincas Borba</h3>
+
+                <p>
+                    A história de Rubião, herdeiro de Quincas Borba, e suas aventuras.
+                </p>
+
+                <p><strong>Autor:</strong> Machado de Assis</p>
+
+        </section>
+
+        <section id="autores" class="autores">
+
+	<h2>Autores</h2>
+
+	<div class="autor-card">
+
+		<img src="j.-k.-rowling.png" alt="J. K. Rowling">
+
+		<h3>J. K. Rowling</h3>
+
+		<p>
+			Autora britânica conhecida pela série Harry Potter.
+		</p>
+
+		<h4>Obras</h4>
+
+		<ul>
+			<li>Harry Potter e a Pedra Filosofal</li>
+			<li>Harry Potter e a Câmara Secreta</li>
+			<li>Harry Potter e o Prisioneiro de Azkaban</li>
+		</ul>
+
+	</div>
+
+
+	<div class="autor-card">
+
+		<img src="machadodeassis.png" alt="Machado de Assis">
+
+		<h3>Machado de Assis</h3>
+
+		<p>
+			Um dos maiores escritores da literatura brasileira.
+		</p>
+
+		<h4>Obras</h4>
+
+		<ul>
+			<li>Dom Casmurro</li>
+			<li>Memórias Póstumas de Brás Cubas</li>
+			<li>Quincas Borba</li>
+		</ul>
+
+	</div>
+
+</section>
+
+
+        <!-- CADASTRO DE LIVRO -->
+
+        <section id="cadastro" class="cadastro">
+
+            <h2>Cadastrar Livro</h2>
+
+            <form>
+
+                <label>Título</label>
+                <input type="text" placeholder="Nome do livro">
+
+                <label>Autor</label>
+                <input type="text" placeholder="Nome do autor">
+
+                <label>Descrição</label>
+                <textarea placeholder="Descrição da obra"></textarea>
+
+                <label>Imagem do livro</label>
+                <input type="text" placeholder="URL da imagem">
+
+                <button type="submit">Cadastrar</button>
+
+            </form>
+
+        </section>
+
+
+        <!-- AUTOR CADASTRAR OBRAS -->
+
+        <section class="autor">
+
+            <h2>Autor - Cadastro de Obras</h2>
+
+            <form>
+
+                <label>Nome do Autor</label>
+                <input type="text" placeholder="Autor">
+
+                <label>Nome da Obra</label>
+                <input type="text" placeholder="Título da obra">
+
+                <label>Ano de publicação</label>
+                <input type="number">
+
+                <button type="submit">Cadastrar Obra</button>
+
+            </form>
+
+        </section>
+
+
+        <!-- NEWSLETTER -->
+
+        <section class="formulario">
+
+            <h2>Receba Novidades!</h2>
+
+            <form>
+
+                <input type="text" placeholder="Nome">
+
+                <input type="email" placeholder="Email">
+
+                <button type="submit">Enviar</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+        <p>© 2026 - Felipe</p>
+    </footer>
+
+</body>
+
+</html>
