@@ -1,25 +1,47 @@
 # Trabalho Prático - Semana 6
 
-Nessa atividade, como sempre, vamos evoluir o que foi feito na semana anterior. Fique atento para fazer o projeto da semana anterior e dar sequência nessa jornada.
+## 📌 Informações Gerais
 
-No trabalho dessa semana vamos alterar o projeto para que a responsividade da home-page seja feita, agora, com o framework Bootstrap.
+- **Nome:** Felipe Gabriel Nogueira Aquino  
+- **Matrícula:** 923614  
+- **Proposta de projeto:** BookZone (site de livros)  
+- **Descrição:**  
+O BookZone é um site voltado para leitores, onde é possível visualizar livros, conhecer autores e cadastrar novas obras.  
+Nesta versão, o projeto foi refatorado utilizando o framework Bootstrap para garantir responsividade em diferentes dispositivos.
 
-**IMPORTANTE 1:** Você deve alterar apenas os arquivos **`README.md`**, **`index.html`** e **`styles.css`**, podendo incluir outros arquivos como imagens na pasta **`images`**, caso necessário. Deixe todos os demais arquivos e pastas desse repositório inalterados. **PRESTE MUITA ATENÇÃO NISSO.**
+---
 
-## Informações Gerais
+## 💻 Tecnologias Utilizadas
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- HTML5  
+- CSS3  
+- Bootstrap 5  
+- Git e GitHub  
 
-## Print da versão responsiva com Bootstrap [DESKTOP]
+---
 
-<<  COLOQUE A IMAGEM AQUI >>
+## 📱 Responsividade
 
-## Print da versão responsiva com Bootstrap [MOBILE] (*)
+O site foi desenvolvido utilizando o sistema de grid do Bootstrap, permitindo:
 
-<<  COLOQUE A IMAGEM AQUI >>
+- Layout em **3 colunas no desktop**
+- Layout em **1 coluna no mobile**
+- Navbar responsiva com menu colapsável
 
+---
 
-(*) Utilize as ferramentas do desenvolvedor do seu navegador para colocar no modo reponsivo, escolha um celular qualquer e recarregue a página antes de tirar o print. 
+## 🖥️ Versão Desktop
+
+![Desktop](desktop.png)
+
+---
+
+## 📲 Versão Mobile
+
+![Mobile](mobile.png)
+
+---
+
+## 📌 Observações
+
+Este projeto faz parte das atividades práticas da disciplina de desenvolvimento web, com foco em responsividade e uso de frameworks modernos.
