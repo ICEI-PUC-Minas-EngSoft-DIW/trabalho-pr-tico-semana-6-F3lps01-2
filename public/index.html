@@ -6,267 +6,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BookZone</title>
 
-    <link rel="stylesheet" href="style.css">
-    
-</head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
 <body>
 
-    <header class="bg-dark text-white p-3">
-        <div class="container d-flex justify-content-between align-items-center">
-        <h1>BookZone</h1>
+<!-- HEADER RESPONSIVO -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">BookZone</a>
 
-            <nav>
-                <a href="#" class="text-white me-3">Home</a>
-                <a href="#livros" class="text-white me-3">Livros</a>
-                <a href="#cadastro" class="text-white me-3">Cadastrar</a>
-                <a href="#pesquisa" class="text-white">Pesquisar</a>
-            </nav>
+        <!-- botão mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#livros">Livros</a></li>
+                <li class="nav-item"><a class="nav-link" href="#cadastro">Cadastrar</a></li>
+                <li class="nav-item"><a class="nav-link" href="#pesquisa">Pesquisar</a></li>
+            </ul>
         </div>
-    </header>
+    </div>
+</nav>
 
-    <main>
+<main>
 
-        <section class="banner">
-            <h2>Destaque da Semana!</h2>
-        </section>
+<!-- BANNER -->
+<section class="bg-light text-center p-5">
+    <h2>Destaque da Semana!</h2>
+</section>
 
-        <section class="intro">
-            <p>
-            O BookZone é um espaço dedicado aos amantes da leitura.
-            Aqui você encontra livros, autores e pode cadastrar novas obras
-            para compartilhar conhecimento com outros leitores.
-            </p>
-        </section>
+<!-- INTRO -->
+<section class="container text-center my-4">
+    <p>
+        O BookZone é um espaço dedicado aos amantes da leitura.
+        Aqui você encontra livros, autores e pode cadastrar novas obras
+        para compartilhar conhecimento com outros leitores.
+    </p>
+</section>
 
+<!-- PESQUISA -->
+<section id="pesquisa" class="container text-center my-5">
+    <h2>Pesquisar e Ordenar Livros</h2>
 
-        <!-- PESQUISA E ORDENAÇÃO -->
+    <input class="form-control my-3" placeholder="Digite o nome do livro...">
 
-        <section id="pesquisa" class="pesquisa">
+    <select class="form-select w-50 mx-auto">
+        <option>Ordenar por</option>
+        <option>Título</option>
+        <option>Autor</option>
+        <option>Mais recentes</option>
+    </select>
+</section>
 
-            <h2>Pesquisar e Ordenar Livros</h2>
-
-            <input type="text" placeholder="Digite o nome do livro...">
-
-            <select>
-                <option>Ordenar por</option>
-                <option>Título</option>
-                <option>Autor</option>
-                <option>Mais recentes</option>
-            </select>
-
-        </section>
-
-
-        <!-- LISTA DE LIVROS -->
-
-        <section class="container my-5">
+<!-- LIVROS -->
+<section id="livros" class="container my-5">
     <h2 class="text-center mb-4">Nossos Livros</h2>
 
     <div class="row">
 
         <div class="col-md-4 mb-4">
-            <div class="card">
+            <div class="card h-100">
                 <img src="img/apedrafilosofal.png" class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title">Pedra Filosofal</h5>
-                    <p class="card-text">O início da jornada...</p>
+                <div class="card-body text-center">
+                    <h5>Pedra Filosofal</h5>
+                    <p>O início da jornada...</p>
                 </div>
             </div>
         </div>
 
         <div class="col-md-4 mb-4">
-            <div class="card">
+            <div class="card h-100">
                 <img src="img/camarasecreta.png" class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title">Câmara Secreta</h5>
-                    <p class="card-text">Mistérios começam...</p>
+                <div class="card-body text-center">
+                    <h5>Câmara Secreta</h5>
+                    <p>Mistérios começam...</p>
                 </div>
             </div>
         </div>
 
         <div class="col-md-4 mb-4">
-            <div class="card">
-                <img src="img/prisioneiro.png" class="card-img-top">
-                <div class="card-body">
-            <h5 class="card-title">Prisioneiro de Azkaban</h5>
-            <p class="card-text">Novos desafios...</p>
+            <div class="card h-100">
+                <img src="img/prisioneiroazkaban.png" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5>Prisioneiro de Azkaban</h5>
+                    <p>Novos desafios...</p>
+                </div>
             </div>
         </div>
+
     </div>
-
-</div>
 </section>
 
-            </article>
+<!-- AUTORES -->
+<section class="container my-5">
+    <h2 class="text-center mb-4">Autores</h2>
 
-            <article class="card">
+    <div class="row">
 
-                <img src="domcasmurro.png" alt="Dom Casmurro">
+        <div class="col-md-6 mb-4">
+            <div class="card text-center p-3">
+                <img src="img/j.-k.-rowling.png" class="rounded-circle mx-auto mb-3" style="width:120px;">
+                <h5>J. K. Rowling</h5>
+                <p>Autora da série Harry Potter.</p>
+            </div>
+        </div>
 
-                <h3>Dom Casmurro</h3>
+        <div class="col-md-6 mb-4">
+            <div class="card text-center p-3">
+                <img src="img/machadodeassis.png" class="rounded-circle mx-auto mb-3" style="width:120px;">
+                <h5>Machado de Assis</h5>
+                <p>Um dos maiores escritores brasileiros.</p>
+            </div>
+        </div>
 
-                <p>
-                    A história de Bentinho e Capitu, marcada por ciúmes e mistérios.
-                </p>
-
-                <p><strong>Autor:</strong> Machado de Assis</p>
-
-            </article>
-
-            <article class="card">
-
-                <img src="memoriaspostumas.png" alt="Memórias Póstumas de Brás Cubas">
-
-                <h3>Memórias Póstumas de Brás Cubas</h3>
-
-                <p>
-                    A vida e as reflexões de Brás Cubas, narradas após sua morte.
-                </p>
-
-                <p><strong>Autor:</strong> Machado de Assis</p>
-
-            </article>
-
-            <article class="card">
-
-                <img src="quincasborba.png" alt="Quincas Borba">
-
-                <h3>Quincas Borba</h3>
-
-                <p>
-                    A história de Rubião, herdeiro de Quincas Borba, e suas aventuras.
-                </p>
-
-                <p><strong>Autor:</strong> Machado de Assis</p>
-
-        </section>
-
-        <section id="autores" class="autores">
-
-	<h2>Autores</h2>
-
-	<div class="autor-card">
-
-		<img src="j.-k.-rowling.png" alt="J. K. Rowling">
-
-		<h3>J. K. Rowling</h3>
-
-		<p>
-			Autora britânica conhecida pela série Harry Potter.
-		</p>
-
-		<h4>Obras</h4>
-
-		<ul>
-			<li>Harry Potter e a Pedra Filosofal</li>
-			<li>Harry Potter e a Câmara Secreta</li>
-			<li>Harry Potter e o Prisioneiro de Azkaban</li>
-		</ul>
-
-	</div>
-
-
-	<div class="autor-card">
-
-		<img src="machadodeassis.png" alt="Machado de Assis">
-
-		<h3>Machado de Assis</h3>
-
-		<p>
-			Um dos maiores escritores da literatura brasileira.
-		</p>
-
-		<h4>Obras</h4>
-
-		<ul>
-			<li>Dom Casmurro</li>
-			<li>Memórias Póstumas de Brás Cubas</li>
-			<li>Quincas Borba</li>
-		</ul>
-
-	</div>
-
+    </div>
 </section>
 
+<!-- CADASTRO -->
+<section id="cadastro" class="container my-5">
+    <h2 class="text-center">Cadastrar Livro</h2>
 
-        <!-- CADASTRO DE LIVRO -->
+    <form class="mx-auto" style="max-width:400px;">
+        <input class="form-control my-2" placeholder="Título">
+        <input class="form-control my-2" placeholder="Autor">
+        <textarea class="form-control my-2" placeholder="Descrição"></textarea>
+        <button class="btn btn-dark w-100">Cadastrar</button>
+    </form>
+</section>
 
-        <section id="cadastro" class="cadastro">
+</main>
 
-            <h2>Cadastrar Livro</h2>
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center p-3">
+    © 2026 - Felipe
+</footer>
 
-            <form>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-                <label>Título</label>
-                <input type="text" placeholder="Nome do livro">
-
-                <label>Autor</label>
-                <input type="text" placeholder="Nome do autor">
-
-                <label>Descrição</label>
-                <textarea placeholder="Descrição da obra"></textarea>
-
-                <label>Imagem do livro</label>
-                <input type="text" placeholder="URL da imagem">
-
-                <button type="submit">Cadastrar</button>
-
-            </form>
-
-        </section>
-
-
-        <!-- AUTOR CADASTRAR OBRAS -->
-
-        <section class="autor">
-
-            <h2>Autor - Cadastro de Obras</h2>
-
-            <form>
-
-                <label>Nome do Autor</label>
-                <input type="text" placeholder="Autor">
-
-                <label>Nome da Obra</label>
-                <input type="text" placeholder="Título da obra">
-
-                <label>Ano de publicação</label>
-                <input type="number">
-
-                <button type="submit">Cadastrar Obra</button>
-
-            </form>
-
-        </section>
-
-
-        <!-- NEWSLETTER -->
-
-        <section class="formulario">
-
-            <h2>Receba Novidades!</h2>
-
-            <form>
-
-                <input type="text" placeholder="Nome">
-
-                <input type="email" placeholder="Email">
-
-                <button type="submit">Enviar</button>
-
-            </form>
-
-        </section>
-
-    </main>
-
-
-    <footer class="footer">
-        <p>© 2026 - Felipe</p>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
