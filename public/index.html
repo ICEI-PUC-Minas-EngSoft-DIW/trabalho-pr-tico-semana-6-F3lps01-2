@@ -7,21 +7,22 @@
     <title>BookZone</title>
 
     <link rel="stylesheet" href="style.css">
+    
 </head>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 <body>
 
-    <header class="header">
-
+    <header class="bg-dark text-white p-3">
+        <div class="container d-flex justify-content-between align-items-center">
         <h1>BookZone</h1>
 
-        <nav class="nav">
-            <a href="#">Home</a>
-            <a href="#livros">Livros</a>
-            <a href="#cadastro">Cadastrar</a>
-            <a href="#pesquisa">Pesquisar</a>
-        </nav>
-
+            <nav>
+                <a href="#" class="text-white me-3">Home</a>
+                <a href="#livros" class="text-white me-3">Livros</a>
+                <a href="#cadastro" class="text-white me-3">Cadastrar</a>
+                <a href="#pesquisa" class="text-white">Pesquisar</a>
+            </nav>
+        </div>
     </header>
 
     <main>
@@ -59,49 +60,43 @@
 
         <!-- LISTA DE LIVROS -->
 
-        <h2 class="titulo-livros">Nossos Livros</h2>
+        <section class="container my-5">
+    <h2 class="text-center mb-4">Nossos Livros</h2>
 
-        <section id="livros" class="books">
+    <div class="row">
 
-            <article class="card">
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="img/apedrafilosofal.png" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Pedra Filosofal</h5>
+                    <p class="card-text">O início da jornada...</p>
+                </div>
+            </div>
+        </div>
 
-                <img src="apedrafilosofal.png" alt="Harry Potter e a Pedra Filosofal">
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="img/camarasecreta.png" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Câmara Secreta</h5>
+                    <p class="card-text">Mistérios começam...</p>
+                </div>
+            </div>
+        </div>
 
-                <h3>Pedra Filosofal</h3>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="img/prisioneiro.png" class="card-img-top">
+                <div class="card-body">
+            <h5 class="card-title">Prisioneiro de Azkaban</h5>
+            <p class="card-text">Novos desafios...</p>
+            </div>
+        </div>
+    </div>
 
-                <p>
-                    O início da jornada de Harry Potter em Hogwarts...
-                </p>
-
-                <p><strong>Autor:</strong> J.K. Rowling</p>
-
-            </article>
-
-            <article class="card">
-
-                <img src="camarasecreta.png" alt="Harry Potter e a Câmara Secreta">
-
-                <h3>Câmara Secreta</h3>
-
-                <p>
-                    Mistérios começam a surgir em Hogwarts...
-                </p>
-
-                <p><strong>Autor:</strong> J.K. Rowling</p>
-
-            </article>
-
-            <article class="card">
-
-                <img src="prisioneiroazkaban.png" alt="Harry Potter e o Prisioneiro de Azkaban">
-
-                <h3>Prisioneiro de Azkaban</h3>
-
-                <p>
-                    Harry retorna a Hogwarts e descobre segredos sobre seu passado.
-                </p>
-
-                <p><strong>Autor:</strong> J.K. Rowling</p>
+</div>
+</section>
 
             </article>
 
@@ -271,6 +266,7 @@
         <p>© 2026 - Felipe</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
